@@ -81,5 +81,5 @@ for iterador in file:
     except:
         pass
 
-with open(json_file_path, "w", encoding="utf-8") as fp:
-    fp.write(json.dumps(r_file, indent=4))
+with open(json_file_path, "w", encoding='utf-8') as fp:
+    fp.write(json.dumps(r_file, indent=4, ensure_ascii=False))
